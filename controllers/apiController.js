@@ -14,7 +14,7 @@ module.exports = function(app){
 
     app.get('/api/todos/:uname', function(req, res){
         Todos.find({ username: req.params.uname }, function (err, todos){
-            if (err) throw err;
+            if (err) throw err; 
 
             res.send(todos);
 
